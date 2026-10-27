@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter",sans-serif;
+    font-optical-sizing: auto;
+}
+
+main{
+    position :relative;
+    height: 100dvh;
+    width: 100%;
+}
+
+.Images{
+    height:100%;
+    width:100%;
+    position:absolute;
+    img{
+        height: 100%;
+        width:100%;
+        object-fit: cover;
+    }
+}
+
+.content{
+    display: flex;
+    height:100%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Burger{
+    position: absolute;
+    top:20%;
+    left:12%;
+}
+
+.Tomato-1{
+    position: absolute;
+    top:60%;
+    left:10%;
+}
+
+.Tomato-2{
+    position:absolute;
+    top:35%;
+    right:15%;
+}
+
+.Pizza{
+    position:absolute;
+    top:45%;
+    right: 10%;
+}
+
+.Momo{
+    position: absolute;
+    top:6%;
+    right:15%;
+}
+
+.Leaf{
+    position:absolute;
+    top:12%;
+    left:28%;
+}
