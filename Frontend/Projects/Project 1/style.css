@@ -15,7 +15,7 @@ main{
     width: 100%;
 }
 
-.Images{
+.Background{
     height:100%;
     width:100%;
     position:absolute;
@@ -55,17 +55,85 @@ main{
 .Pizza{
     position:absolute;
     top:45%;
-    right: 10%;
+    right: 5%;
 }
 
 .Momo{
     position: absolute;
     top:6%;
-    right:15%;
+    right:14%;
 }
 
 .Leaf{
     position:absolute;
     top:12%;
     left:28%;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    h1{
+        font-size: 62px;
+        line-height: 62px;
+        margin-bottom: 44px;
+        text-align:center;
+        color: #ca0306;
+    }
+
+    p{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 450px;
+
+    }
+}
+
+.info-section{
+    display: flex;
+    margin-top: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255,255,255,0.95);
+    box-shadow:0 8px rgba(0,0,0,0.1);
+    gap: 16px;
+    padding: 15px;
+    border-radius:15px;
+    border: 1px solid rgba(255,255,255,0.2);
+
+    .info-item{
+        display: flex;
+        align-items:center;
+        gap : 12px;
+
+        .info-icon{
+            height: 50px;
+            width: 50px;
+            object-fit: contain;
+        }
+
+        .info-text{
+            display:flex;
+            flex-direction: column;
+
+            .info-number{
+                font-size:  24px;
+                font-weight: bold;
+                color: #ca0306;
+            }
+
+            .info-label{
+                font-size:16px;
+                color:black;
+                font-weight: 500;
+            }
+        
+        }
+
+    }
 }
