@@ -13,26 +13,13 @@ main{
     position :relative;
     height: 100dvh;
     width: 100%;
-}
 
-.Background{
-    height:100%;
-    width:100%;
-    position:absolute;
-    img{
-        height: 100%;
-        width:100%;
-        object-fit: cover;
-    }
-}
-
-.content{
+    .content{
     display: flex;
     height:100%;
     width:100%;
     justify-content: center;
     align-items: center;
-}
 
 .center-content{
     position: relative;
@@ -106,7 +93,7 @@ main{
     justify-content: center;
     align-items: center;
     background-color:rgba(255,255,255,0.95);
-    box-shadow:0 8px rgba(0,0,0,0.1);
+    box-shadow:0 8px 16px rgba(0,0,0,0.1);
     gap: 16px;
     padding: 15px;
     border-radius:15px;
@@ -143,51 +130,190 @@ main{
 
     }
 }
+}
+}
+
+.Background{
+    height:100%;
+    width:100%;
+    position:absolute;
+    img{
+        height: 100%;
+        width:100%;
+        object-fit: cover;
+    }
+}
+
+
+
+
 
 @media(width <= 768px){
     /* Smaller Smartphone */
 
+    main{ 
+        .content{
+
+        .center-content{
+            position: relative;
+
+            .Burger{
+            position: absolute;
+            top:0%;
+            left:-17%;
+            transform: scale(0.4);
+        }
+
+        .Tomato-1{
+            position: absolute;
+            top:61%;
+            left:10%;
+            transform: scale(0.5);
+        }
+
+        .Tomato-2{
+            position:absolute;
+            top:14%;
+            right:0%;
+            transform: scale(0.5);
+        }
+
+        .Pizza{
+            position:absolute;
+            top:16%;
+            right: -21%;
+            transform: scale(0.4);
+        }
+
+        .Momo{
+            position: absolute;
+            top:-44%;
+            right:-14%;
+            transform: scale(0.4);
+        }
+
+        .Leaf{
+            position:absolute;
+            top:-30%;
+            left:12%;
+            transform: scale(0.5);
+        }
+    }
+    .text-content{
+        margin-bottom: 20px;
+        h1{
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 12px;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 20px;
+            max-width: 200px;
+
+        }
+    }
+   
+
+   .info-section{
+    margin-top: 60px;
+    box-shadow:0 3px rgba(0,0,0,0.1);
+    gap: 7px;
+    padding: 12px;
+    border-radius: 7px;
+    .info-item{
+        gap : 6px;
+
+        .info-icon{
+            height: 30px;
+            width: 30px;
+        }
+
+        .info-text{
+
+            .info-number{
+                font-size:  14px;
+            }
+
+            .info-label{
+                font-size:12px;
+            }
+        
+        }
+
+    }
+    
+    }
+  }
+ }
 }
 
 @media(769px <= width <= 1279px ){
-    .center-content{
-        position: relative;
+    /*Laptop,landscape tablets,small desktops*/
+    main{ 
+        .content{
 
-        .Burger{
-        position: absolute;
-        top:0%;
-        left:-40%;
-    }
+        .center-content{
+            position: relative;
 
-    .Tomato-1{
-        position: absolute;
-        top:61%;
-        left:-45%;
-    }
+            .Burger{
+            position: absolute;
+            top:0%;
+            left:-27%;
+            transform: scale(0.8);
+        }
 
-    .Tomato-2{
-        position:absolute;
-        top:30%;
-        right:-10%;
-    }
+        .Tomato-1{
+            position: absolute;
+            top:61%;
+            left:-15%;
+            transform: scale(0.8);
+        }
 
-    .Pizza{
-        position:absolute;
-        top:24%;
-        right: -33%;
-    }
+        .Tomato-2{
+            position:absolute;
+            top:14%;
+            right:-5%;
+            transform: scale(0.8);
+        }
 
-    .Momo{
-        position: absolute;
-        top:-20%;
-        right:-20%;
-    }
+        .Pizza{
+            position:absolute;
+            top:16%;
+            right: -21%;
+            transform: scale(0.8);
+        }
 
-    .Leaf{
-        position:absolute;
-        top:-15%;
-        left:0%;
-    }
+        .Momo{
+            position: absolute;
+            top:-44%;
+            right:-14%;
+            transform: scale(0.8);
+        }
 
+        .Leaf{
+            position:absolute;
+            top:-13%;
+            left:12%;
+            transform: scale(0.8);
+        }
     }
+    .text-content{
+        margin-bottom: 20px;
+        h1{
+            font-size: 42px;
+            line-height: 45px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-size: 20px;
+            line-height: 24px;
+            max-width: 380px;
+
+        }
+    }
+   }
+ }
 }
